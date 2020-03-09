@@ -13,3 +13,38 @@ body {
     /* 垂直居中 */
     line-height: 50px;
 }
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.header li {
+    float: left;
+    margin-left: 10px;
+}
+
+.header li a {
+    color: #f3f3f3;
+}
+
+.content {
+    background-color: antiquewhite;
+}
+
+.content th,
+.content td {
+    width: 100px;
+    border: 1px solid white;
+    text-align: center;
+}
+
+.footer {
+    height: 50px;
+    background-color: #555555;
+    /* 垂直居中 */
+    line-height: 50px;
+}
