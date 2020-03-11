@@ -1,0 +1,74 @@
+body {
+    background-color: #ddb578;
+}
+
+.container-login {
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    width: 20%;
+    height: 40%;
+    border-radius: 0.35em;
+    background-color: #da8e1d;
+    text-align: center;
+    overflow: hidden;
+}
+
+#title {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: pink;
+    line-height: 50px;
+}
+
+.form_user {
+    position: relative;
+    margin-top: 10px;
+}
+
+.form_pwd,
+.form_submit {
+    position: relative;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.form_user>input,
+.form_pwd>input {
+    width: 80%;
+    height: 35px;
+    border: 1px solid antiquewhite;
+    border-radius: 12px;
+    padding-left: 12px;
+    outline: none;
+    font-size: 25px;
+}
+
+.form_submit button {
+    margin-top: 10px;
+    width: 180px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    outline: none;
+    font-size: 32px;
+    line-height: 32px;
+    color: #5c5353;
+    animation-name: live;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    /* 循环状态，往复 */
+    animation-direction: alternate;
+}
+
+.form_submit button:hover {
+    cursor: pointer;
+}
+
+@keyframes live {
+    0% {}
+    100% {
+        background-color: palegreen;
+    }
+}

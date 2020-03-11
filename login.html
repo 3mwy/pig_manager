@@ -6,58 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/base.css">
-    <style>
-        body {
-            background-color: blanchedalmond;
-        }
-        
-        .middle {
-            position: absolute;
-            left: 40%;
-            top: 40%;
-            width: 20%;
-            height: 20%;
-            border-radius: 10%;
-            background-color: #ffffff;
-            overflow: hidden;
-        }
-        
-        .form_user {
-            position: relative;
-            left: 10%;
-            top: 10%;
-        }
-        
-        .form_pwd {
-            position: relative;
-            left: 10%;
-        }
-        
-        .form_user>input,
-        .form_pwd>input {
-            margin-top: 10px;
-            width: 180px;
-            height: 35px;
-            border: 1px solid antiquewhite;
-            border-radius: 12px;
-            padding-left: 12px;
-            outline: none;
-            font-size: 25px;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/login.css">
 </head>
 
 <body>
-    <div class="middle">
+    <div class="container-login">
+        <div id="title">🐷</div>
         <form action="#">
             <div class="form_user">
-                <span>账号</span><input type="text" name="" id="">
+                <input type="text" name="username" id="user" placeholder="账号👩🏻‍💻">
             </div>
             <div class="form_pwd">
-                <span>密码</span><input type="password" name="" id="">
+                <input type="password" name="password" id="pwd" placeholder="密码🔑">
+            </div>
+            <div class="form_submit">
+                <button id="submit">登陆</button>
             </div>
         </form>
     </div>
+    <script src="./js/jquery.js"></script>
+    <script>
+        // TODO:验证
+        $(".form_user").on('change', function() {
+            console.log('sss');
+
+        })
+    </script>
 </body>
 
 </html>
